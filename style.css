@@ -34,14 +34,15 @@ body {
   width: 2.8rem;
   height: 2.8rem;
 }
-.circle,
-.card label.circle {
+.circle {
+  border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
   background-color: var(--Medium-Grey);
   color: var(--Light-Grey);
+}
+.card label.circle {
   margin-top: 1.35em;
   cursor: pointer;
   width: 3rem;
