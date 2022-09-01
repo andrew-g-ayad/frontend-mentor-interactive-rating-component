@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -14,17 +12,6 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Frontend Mentor | Interactive rating component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
@@ -39,37 +26,30 @@
           appreciated to help us improve our offering!
         </p>
         <form name="form" class="radio-group" id="form">
-  
          <input type="radio" id="reviewChoice1" hidden class="radio" name="one" > </label>
          <label class ="circle " for="reviewChoice1">1</label>
-          
           <input type="radio" id="reviewChoice2" hidden class="radio"
           name="one" > </label>
           <label class ="circle" for="reviewChoice2">2</label>
-          
           <input type="radio" id="reviewChoice3" hidden class="radio"
           name="one" > </label>
           <label class ="circle" for="reviewChoice3">3</label>
-          
-          
           <input type="radio" id="reviewChoice4" hidden class="radio"
           name="one" > </label>
           <label class ="circle" for="reviewChoice4">4</label>
-  
           <input type="radio" id="reviewChoice5" hidden class ="radio"
           name="one" > </label>
           <label class ="circle" for="reviewChoice5">5</label>
-         
         </form>
         <button id="btn" class="submit" type="submit">Submit</button>
-        <!-- Rating state end -->
       </div>
+      <!-- Rating state end -->
+      
+      <!-- Thank you state start -->
       <div class="card hide"  id="feedback">
-  
         <img src="./images/illustration-thank-you.svg" alt="thank you illustration">
-        <!-- Thank you state start -->
-        <p class="tag">You selected&nbsp;<span id="rate">0</span>&nbsp;out of 5 </p>
         <!-- Add rating here -->
+        <p class="tag">You selected&nbsp;<span id="rate">0</span>&nbsp;out of 5 </p>
       <h2>
         Thank you!
       </h2> 
@@ -77,10 +57,8 @@
           We appreciate you taking the time to give a rating. If
           you ever need more support, don’t hesitate to get in touch!
         </p>
-        
-        <!-- Thank you state end -->
       </div>
+      <!-- Thank you state end -->
     </main>
-
   </body>
 </html>

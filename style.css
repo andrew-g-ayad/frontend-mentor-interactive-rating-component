@@ -26,7 +26,6 @@ body {
 .card {
   padding: 1.8em;
   padding-right: 2.25em;
-  /* margin-top: 25vh; */
   max-width: 23.5rem;
   border-radius: 25px;
   background-image: radial-gradient(circle at top, #232a34, #161d27);
@@ -83,6 +82,7 @@ h2 {
 .card .radio-group {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -96,7 +96,7 @@ h2 {
   font-weight: 400;
   letter-spacing: 2px;
   border-radius: 25px;
-  border: 1px solid black;
+  border: none;
   padding: 1em;
 }
 .submit:hover {
@@ -110,9 +110,6 @@ h2 {
   align-items: center;
   flex-direction: column;
   text-align: center;
-}
-.feedback p {
-  /* letter-spacing: -0.8px !important; */
 }
 .tag {
   display: flex;
