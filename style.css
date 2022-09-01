@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  user-select: none;
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: rgb(42, 52, 62);
+  --Dark-Blue: hsl(215, 23%, 16%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+
+  background-color: var(--very-dark-blue);
+}
+
+.card {
+  padding: 1.8em;
+  padding-right: 2.25em;
+  margin-top: 25vh;
+  width: 23.5rem;
+  border-radius: 25px;
+  background-image: radial-gradient(circle at top, #232a34, #161d27);
+}
+.star {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.circle,
+.card label.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50px;
+  background-color: var(--Medium-Grey);
+  color: var(--Light-Grey);
+}
+.card label.circle {
+  margin-top: 1.35em;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+}
+.card label.circle:hover {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+.card .radio-group .selected {
+  background-color: var(--Light-Grey);
+  color: var(--White);
+}
+.card h1,
+h2 {
+  font-size: 25px;
+  margin-top: 1.2em;
+  color: var(--White);
+  font-weight: 700;
+}
+.card p {
+  cursor: default;
+  user-select: text;
+  margin-top: 0.55em;
+  font-size: 14px;
+  letter-spacing: -0.14px;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: var(--Light-Grey);
+}
+
+.attribution {
+  margin-top: auto;
+}
+.card .radio-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .submit {
+  margin-top: 2.25em;
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--Orange);
+  color: var(--White);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  border: 1px solid black;
+  padding: 1em;
+}
+.submit:hover {
+  color: var(--Orange);
+  background-color: var(--White);
+  font-weight: 700;
+  border: none;
+}
+.feedback {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.feedback p {
+  /* letter-spacing: -0.8px !important; */
+}
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 0.25rem;
+  padding-inline: 1rem;
+  margin-top: 2.25rem !important;
+  background-color: var(--Medium-Grey);
+  color: var(--Orange) !important;
+  border-radius: 25px;
+}
+
+.hide {
+  display: none;
+}
